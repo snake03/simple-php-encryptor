@@ -19,13 +19,20 @@ class Encryptor
 {
 
     /**
+     * These are two secret phrases to encrypt and sign messages. Remember to change them.
      *
      * @var string
      */
-    private static $secret1 = "The Fox Jump Over The Hedge";
-    private static $secret2 = "Puttin' on the Ritz";
+    private static $secret1 = "Sempre caro mi fu quest'ermo colle";
+    private static $secret2 = "Nel mezzo del cammin di nostra vita mi ritrovai";
 
 
+    /**
+     * Encrypt a message
+     *
+     * @param $message
+     * @return string
+     */
     public static function encrypt($message) {
         $cryptable = self::$secret1 .self::$secret2;
         $seed = crc32($message) % strlen($cryptable);
@@ -39,6 +46,12 @@ class Encryptor
         return base64_encode($result);
     }
 
+    /**
+     * Decrypt a message previously encrypted
+     *
+     * @param $message
+     * @return string
+     */
     public static function decrypt($message)
     {
         $cryptable = self::$secret1 . self::$secret2;

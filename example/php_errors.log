@@ -1,8 +1,0 @@
-[31-Jul-2016 18:00:21 UTC] PHP Fatal error:  Class 'RicBarbo\SimplePHPEncryptor\Encryptor' not found in /Applications/MAMP/htdocs/simple-php-encryptor/example/Token.php on line 100
-[31-Jul-2016 18:03:31 UTC] PHP Fatal error:  Class 'RicBarbo\SimplePHPEncryptor\Encryptor' not found in /Applications/MAMP/htdocs/simple-php-encryptor/example/Token.php on line 100
-[31-Jul-2016 18:04:21 UTC] PHP Warning:  require_once(/Applications/MAMP/htdocs/simple-php-encryptor/src): failed to open stream: Inappropriate ioctl for device in /Applications/MAMP/htdocs/simple-php-encryptor/example/Token.php on line 3
-[31-Jul-2016 18:04:21 UTC] PHP Fatal error:  require_once(): Failed opening required '../src/' (include_path='.:') in /Applications/MAMP/htdocs/simple-php-encryptor/example/Token.php on line 3
-[31-Jul-2016 18:04:30 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Token not valid' in /Applications/MAMP/htdocs/simple-php-encryptor/example/bootstrap.php:26
-Stack trace:
-#0 {main}
-  thrown in /Applications/MAMP/htdocs/simple-php-encryptor/example/bootstrap.php on line 26
