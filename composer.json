@@ -1,0 +1,21 @@
+{
+    "name": "ricbarbo/simple-php-encryptor",
+    "description": "Simple PHP Encryption",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Riccardo Barbotti",
+            "email": "snake03@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "RicBarbo\\SimplePHPEnctyptor\\": "src/"
+        }
+    }
+
+}
